@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<header>
+			<nav>
+				<div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
+				<div class="logo">
+					LOGO
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, libero! Ipsa ut doloremque numquam veritatis alias exercitationem illo molestiae, neque blanditiis consequatur, sint, culpa mollitia accusamus aperiam harum laboriosam esse.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, libero! Ipsa ut doloremque numquam veritatis alias exercitationem illo molestiae, neque blanditiis consequatur, sint, culpa mollitia accusamus aperiam harum laboriosam esse.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, libero! Ipsa ut doloremque numquam veritatis alias exercitationem illo molestiae, neque blanditiis consequatur, sint, culpa mollitia accusamus aperiam harum laboriosam esse.</p>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		// Menu toggle-button
+		$(document).ready(function() {
+			$(".menu-icon").on("click", function() {
+				$("nav ul").toggleClass("showing");
+			});
+		});
+
+		// Scrolling effect
+		$(window).on("scroll", function() {
+			if($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}else{
+				$('nav').removeClass('black');
+			}
+		});
+	</script>
+</body>
+</html>
